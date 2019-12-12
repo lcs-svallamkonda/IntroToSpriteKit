@@ -124,8 +124,9 @@ let circle5 = SKSpriteNode(imageNamed: "circle")
 circle5.position = CGPoint(x: scene.size.width, y: scene.size.height)
 scene.addChild(circle5)
 // Exercise 3: Write your code below.
-
-
+let square = SKSpriteNode(imageNamed: "square")
+square.position = CGPoint(x: scene.size.width / 2, y: scene.size.height)
+scene.addChild(square)
 /*:
 
  [Previous: Creating a SpriteKit Scene](@previous) | Page 3 | [Next: Physics Engine](@next)
