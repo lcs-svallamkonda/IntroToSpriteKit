@@ -57,26 +57,26 @@ scene.physicsBody = SKPhysicsBody(edgeLoopFrom: scene.frame)
 
  */
 
-//// Create a label node (must reference a font installed on the system)
-//let title = SKLabelNode(fontNamed: "Helvetica Neue Light")
-//title.fontSize = 24
-//title.fontColor = .orange
-//title.zPosition = 10        // Make sure text appears in front of other nodes
-//title.text = "Letter Slide"
-//title.position = CGPoint(x: scene.size.width - 100, y: scene.size.height - 50)
-//scene.addChild(title)
+// Create a label node (must reference a font installed on the system)
+let title = SKLabelNode(fontNamed: "Helvetica Neue Light")
+title.fontSize = 24
+title.fontColor = .orange
+title.zPosition = 10        // Make sure text appears in front of other nodes
+title.text = "Letter Slide"
+title.position = CGPoint(x: scene.size.width - 100, y: scene.size.height - 50)
+scene.addChild(title)
 
-//// Create a letter that will fall down the slide
-//let letter = SKLabelNode(fontNamed: "Rockwell")
-//letter.fontSize = 36
-//letter.fontColor = .white
-//letter.text = "T"
-//letter.position = CGPoint(x: 56, y: scene.size.height - 50)
-//// Physics body is just slightly above the baseline of the text
-//letter.physicsBody = SKPhysicsBody(circleOfRadius: 15,
-//                                   center: CGPoint(x: 0, y: 10))
-//// Add the letter to the scene
-//scene.addChild(letter)
+// Create a letter that will fall down the slide
+let letter = SKLabelNode(fontNamed: "Rockwell")
+letter.fontSize = 36
+letter.fontColor = .white
+letter.text = "T"
+letter.position = CGPoint(x: 56, y: scene.size.height - 50)
+// Physics body is just slightly above the baseline of the text
+letter.physicsBody = SKPhysicsBody(circleOfRadius: 15,
+                                   center: CGPoint(x: 0, y: 10))
+// Add the letter to the scene
+scene.addChild(letter)
 
 /*:
  
@@ -95,9 +95,64 @@ scene.physicsBody = SKPhysicsBody(edgeLoopFrom: scene.frame)
  */
 
 // Exercise: Write your code below.
+// Create a the letter H that will sit at the bottom of the slide
+let H = SKLabelNode(fontNamed: "Brush Script MT")
+H.fontSize = 60
+H.fontColor = .white
+H.text = "H"
+H.position = CGPoint(x: 445, y: 5)
+//H.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+H.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 40), center: CGPoint(x: 0, y: 20))
+
+//add the H to the scene
+scene.addChild(H)
+
+//Create a the letter 'e' that will sit at the bottom of the slide
+let e = SKLabelNode(fontNamed: "Brush Script MT")
+e.fontSize = 72
+e.fontColor = .white
+e.text = "e"
+e.position = CGPoint(x: 475, y: 5)
+e.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 25, height: 30), center: CGPoint(x: 0, y: 15))
 
 
+//add the e to the scene
+scene.addChild(e)
 
+//Create a the letter 'l' that will sit at the bottom of the slide
+let l = SKLabelNode(fontNamed: "Brush Script MT")
+l.fontSize = 72
+l.fontColor = .white
+l.text = "l"
+l.position = CGPoint(x: 480, y: 5)
+l.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 25, height: 40), center: CGPoint(x: 0, y: 20))
+
+
+//add the l to the scene
+scene.addChild(l)
+
+//Create another 'l' that will sit at the bottom of the slide
+let l2 = SKLabelNode(fontNamed: "Brush Script MT")
+l2.fontSize = 72
+l2.fontColor = .white
+l2.text = "l"
+l2.position = CGPoint(x: 485, y: 5)
+l2.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 25, height: 40), center: CGPoint(x: 0, y: 20))
+
+//add the l to the scene
+scene.addChild(l2)
+
+//Create a the letter 'o' that will sit at the bottom of the slide
+let o = SKLabelNode(fontNamed: "Brush Script MT")
+o.fontSize = 72
+o.fontColor = .white
+o.text = "o"
+o.position = CGPoint(x: 490, y: 5)
+o.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 25, height: 30), center: CGPoint(x: 0, y: 15))
+
+
+//add the e to the scene
+scene.addChild(o)
 /*:
 
  [Previous: Adding Nodes Repeatedly](@previous) | Page 7 | [Next: Animating a Sprite](@next)
