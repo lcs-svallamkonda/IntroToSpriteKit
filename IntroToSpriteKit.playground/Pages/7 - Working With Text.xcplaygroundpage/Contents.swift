@@ -97,7 +97,7 @@ scene.addChild(letter)
 // Exercise: Write your code below.
 // Create a the letter H that will sit at the bottom of the slide
 let H = SKLabelNode(fontNamed: "Brush Script MT")
-H.fontSize = 60
+H.fontSize = 72
 H.fontColor = .white
 H.text = "H"
 H.position = CGPoint(x: 445, y: 5)
@@ -151,7 +151,7 @@ o.position = CGPoint(x: 490, y: 5)
 o.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 25, height: 30), center: CGPoint(x: 0, y: 15))
 
 
-//add the e to the scene
+//add the o to the scene
 scene.addChild(o)
 /*:
 
